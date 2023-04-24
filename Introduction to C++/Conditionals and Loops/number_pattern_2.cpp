@@ -4,6 +4,10 @@ Number Pattern 2
 Print the following pattern
 Pattern for N = 4
 
+. . . 1
+. . 2 3
+. 3 4 5
+4 5 6 7
 
 The dots represent spaces.
 */
