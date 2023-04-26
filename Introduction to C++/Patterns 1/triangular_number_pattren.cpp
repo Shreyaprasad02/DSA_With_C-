@@ -17,12 +17,12 @@ int main(){
     int n;
     cin >> n;
     int currRow = 1;
-    while(currRow<=n){
-        int currCol = currRow;
-        while (currCol >= 1)
+    while(currRow <= n){
+        int currCol = 1;
+        while (currCol <= currRow)
         {
-            cout << currCol;
-            currCol = currCol - 1;
+            cout << currRow;
+            currCol = currCol + 1;
         }
         cout << endl;
         currRow = currRow + 1;
