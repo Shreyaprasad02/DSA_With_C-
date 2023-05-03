@@ -37,22 +37,22 @@ Sample Output 2 :
 #include <iostream>
 using namespace std;
 
-void arrange(int *arr, int n)
-{
-   int start=0, end=n-1;
+void arrange(int *arr, int n){
+   int left = 0, right = n-1;
    
-   int val=1;
-   while(start<end){
+   int counter = 1;
+   while(left <= right){
 
-       arr[start]=val;
-       val++;
-       start++;
-       arr[end]=val;
-           val++;
-           end--;
-   }
-   if(start==end){
-       arr[start]=val;
+	if(counter % 2 == 1){
+		arr[left] = counter;
+		counter++;
+		left++;
+	}
+	else{
+		arr[right] = counter;
+		counter++;
+		right--;
+	}
    }
 }
 
