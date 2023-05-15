@@ -3,7 +3,7 @@ Pair Sum
 
 You have been given an integer array/list(ARR) and a number X. Find and return the total number of pairs in the array/list which sum to X.
 Note:
-Given array/list can contain duplicate elements. 
+Given array/list can contain duplicate elements.
 Input format :
 The first line contains an Integer 't' which denotes the number of test cases or queries to be run. Then the test cases follow.
 
@@ -53,13 +53,15 @@ using namespace std;
 int pairSum(int *input, int size, int x)
 {
 	int numPairs = 0;
-	for(int i=0; i<size; i++){
-		for(int j = i+1; j<size; j++){
-			if(input[i]+input[j]==x){
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = i + 1; j < size; j++)
+		{
+			if (input[i] + input[j] == x)
+			{
 				++numPairs;
 			}
 		}
-		
 	}
 	return numPairs;
 }
@@ -88,6 +90,6 @@ int main()
 
 		delete[] input;
 	}
-	
+
 	return 0;
 }
