@@ -4,31 +4,34 @@ Binary Search
 
 */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int binarySearch(int arr[], int n, int x){
+int binarySearch(int arr[], int n, int x)
+{
     int start = 0, end = n - 1;
     while (start <= n)
     {
         int mid = (start + end) / 2;
-        if(arr[mid] == x){
+        if (arr[mid] == x)
+        {
             return mid;
         }
         else if (x < arr[mid])
         {
             end = mid - 1;
         }
-        else{
+        else
+        {
             start = mid + 1;
         }
     }
     return -1;
-
 }
 
-int main(){
-    //taking array input from the user
+int main()
+{
+    // taking array input from the user
     int n;
     cin >> n;
 
@@ -41,8 +44,5 @@ int main(){
     int x;
     cin >> x;
 
-    cout << binarySearch(input , n , x) << endl;
-
+    cout << binarySearch(input, n, x) << endl;
 }
-
-
