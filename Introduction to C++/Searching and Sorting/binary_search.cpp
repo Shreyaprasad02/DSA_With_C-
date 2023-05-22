@@ -10,8 +10,7 @@ using namespace std;
 int binarySearch(int arr[], int n, int x)
 {
     int start = 0, end = n - 1;
-    while (start <= n)
-    {
+    while (start <= n){
         int mid = (start + end) / 2;
         if (arr[mid] == x)
         {
