@@ -1,8 +1,4 @@
-/*
-
-Binary Search
-
-*/
+// Binary Search
 
 #include <iostream>
 using namespace std;
